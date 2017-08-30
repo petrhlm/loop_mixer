@@ -1,0 +1,204 @@
+body {
+    overflow: auto;
+}    
+
+.App {
+        text-align: center;
+        margin-top: 50px;
+        white-space: nowrap;
+    }
+
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 80px;
+    }
+
+    .App-header {
+        /*background-color: #222;*/
+        height: 150px;
+        padding: 20px;
+        color: white;
+    }
+
+    .App-intro {
+        font-size: large;
+    }
+
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+    }
+
+    .knob-lock {
+        cursor: pointer;
+    }
+
+    .knob-unlock {
+        cursor: ns-resize;
+    }
+
+    svg {
+        display: inline-block;
+        margin: 0;
+        padding: 0
+    }
+
+    canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #p5-bg {
+        position: relative;
+        z-index: -2;
+    }
+
+    .muteShortCut {
+        z-index: 2;
+    }
+
+    line {
+        stroke-opacity: 0;
+    }
+
+    svg .line {
+        text-align: center;
+    }
+
+    .mute {
+        cursor: pointer;
+        transform: translateY(0px);
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+    }
+
+    .sequencer {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .muteAll,
+    .unMuteAll,
+    .lockAll,
+    .unLockAll {
+        cursor: pointer
+    }
+
+    .save {
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer
+    }
+
+    .play,
+    .stop {
+        height: 22px;
+        width: 22px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer
+    }
+
+    .load {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .add {
+        height: 20px;
+        width: 20px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+
+    .buttons {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sequenced-items {
+        display: inline-block;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .activeState {
+        display: inline-block;
+        color: limegreen;
+        -webkit-animation: 1s linear infinite condemed_blink_effect;
+        animation: 1s linear infinite condemed_blink_effect;
+    }
+
+    .sequencer-play {
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
+        cursor: pointer;
+    }
+
+    .sequencer-hidden {
+        display: none;
+    }
+
+    .clear {
+        cursor: pointer;
+    }
+
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    @-webkit-keyframes condemed_blink_effect {
+        0% {
+            visibility: visible;
+            opacity: 0;
+        }
+        25% {
+            visibility: visible;
+            opacity: .5;
+        }
+        50% {
+            visibility: visible;
+            opacity: 1;
+        }
+        75% {
+            visibility: visible;
+            opacity: .5;
+        }
+        100% {
+            visibility: visible;
+            opacity: 0;
+        }
+    }
+
+    @keyframes condemed_blink_effect {
+        0% {
+            visibility: visible;
+            opacity: 0;
+        }
+        25% {
+            visibility: visible;
+            opacity: .5;
+        }
+        50% {
+            visibility: visible;
+            opacity: 1;
+        }
+        75% {
+            visibility: visible;
+            opacity: .5;
+        }
+        100% {
+            visibility: visible;
+            opacity: 0;
+        }
+    }
