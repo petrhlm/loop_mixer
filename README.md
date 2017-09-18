@@ -7,7 +7,9 @@ If you want to import your own sounds, make sure that the Tone.Player objects ar
       
  appears many times and is the equation that links the state of pixel coordinates to the Tone.Player objects in the array.
  
- Feel free to email me if you would like to discuss this, or if there is a better way of doing this.
+ Feel free to email me if you would like to discuss this, or if you would like to provide feedback on a better way of doing this. This project lacks modularity, but I felt that it was best to make the Tone.Player objects global instead of putting them in their own component. The players cannot update, so I felt it was safer to put them outside the Mixer component in the Mixer.js file.
+ 
+I intend to improve on this model in future projects, and then eventually return to this.
 
 Regards,
 
