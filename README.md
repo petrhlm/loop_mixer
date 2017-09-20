@@ -1,6 +1,6 @@
 This is a loop mixer made with React and Tone.js, with a p5 canvas in the background. Please feel free to change and improve. 
 
-If you want to import your own sounds, make sure that the Tone.Player objects are synced with the array of players. Also, bear in mind that the positions of the fader are influenced by the distance in pixels the SVG canvases rest from the top of the window. The following code,
+If you want to import your own sounds, make sure that the Tone.Player objects are synced with the array of players and the Mixer component state, which contains the pixel coordinates. Also, bear in mind that the positions of the fader are influenced by the distance in pixels the SVG canvases rest from the top of the window. The following code,
 
 <code>let difference = Math.floor((100 - (this.state.tracks[i].level - 2) / 3.46));
       players[i].volume.value = difference - 60;</code>
