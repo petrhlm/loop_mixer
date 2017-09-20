@@ -5,7 +5,7 @@ If you want to import your own sounds, make sure that the Tone.Player objects ar
 <code>let difference = Math.floor((100 - (this.state.tracks[i].level - 2) / 3.46));
       players[i].volume.value = difference - 60;</code>
       
- appears many times and is the equation that links the state of pixel coordinates to the Tone.Player objects in the array.
+ appears many times and is the equation that links the state of pixel coordinates to the volume levels of the Tone.Player objects in the array of players.
  
  Feel free to email me if you would like to discuss this, or if you would like to provide feedback on a better way of doing this. This project lacks modularity, but I felt that it was best to make the Tone.Player objects global instead of putting them in their own component. The players cannot update, so I felt it was safer to put them outside the Mixer component in the Mixer.js file.
  
